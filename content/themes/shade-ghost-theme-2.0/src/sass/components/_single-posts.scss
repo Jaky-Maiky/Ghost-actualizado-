@@ -1,0 +1,134 @@
+// Single post
+.post-template {
+    header {
+        height: 100vh;
+        margin-bottom: 25px;
+
+        @media (min-width: 992px) {
+            height: calc(30vh + 68px)
+        }
+
+        img {
+            width: 100vw;
+            max-height: 100px;
+        }
+    }
+
+    .post {
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: 0;
+        border-bottom: 0;
+        word-break: break-word;
+
+        .post-image {
+            img {
+                margin-bottom: 1rem;
+                width: 100%;
+                height: auto;
+                border-radius: 3px;
+            }
+        }
+
+        .post-meta {
+            display: inline-block;
+            margin: 0 0 5px 0;
+            font-size: .875rem;
+            color: $meta-color;
+            transition: color .2s ease;
+
+            @media (min-width: 576px) {
+                font-size: 1rem;
+            }
+
+            a {
+                color: lighten($meta-color, 10%);
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    color: $meta-hover-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .post-title {
+            margin: 0 0 1.5rem;
+            font-size: 2.5rem;
+            color: $heading-color;
+        }        
+
+        .post-content {
+            p {
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+
+            h2, h3, h4, h5, h6 {
+                margin: 10px 0 5px;
+                color: $heading-color;
+            }
+
+            a {
+                font-weight: 400;
+
+                &:hover,
+                &:focus {
+                    cursor: pointer;
+                }
+            }
+
+            b, strong {
+                font-weight: 500;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            ul, ol {
+                margin-top: 10px;
+
+                li {
+                    padding: 2px 0;
+                }
+            }
+        }
+
+        .post-footer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin: 2.5rem 0 0;
+            padding: 40px 0;
+            border-top: 2px solid $border-color;
+
+            @media (min-width: 576px) {
+                padding: 1.5rem 0 0;
+            }
+
+            .share {
+                font-size: 1rem;
+
+                .list-inline > li {
+                    &:first-of-type {
+                        margin: 0 5px 0 0;
+                    }
+                }
+
+                i.mdi {
+                    color: darken($text-color, 10%);
+                    transition: color .2s;
+
+                    &:hover,
+                    &:focus {
+                        color: darken($text-color, 25%);
+                    }
+                }
+            }
+        }
+    }
+}

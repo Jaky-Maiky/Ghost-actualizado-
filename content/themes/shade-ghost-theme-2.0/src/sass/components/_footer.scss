@@ -1,0 +1,75 @@
+// Footer
+footer {
+    margin: 40px 0 0;
+    padding: 40px 0;
+    background-color: $footer-bg;
+    border-top: 1px solid $border-color;
+    color: darken($text-color, 20%);
+    transition: all .5s .1s;
+
+    .md-8 {
+        display: flex;
+        align-items: center; // for better vertical alignment
+    }
+
+    p {
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        transition: color .2s ease;
+
+        &:hover,
+        &:focus {
+            color: lighten($text-color, 10%);
+            cursor: pointer;
+        }
+    }
+
+    .copy-list {
+        li {
+            display: block;
+            margin: 0;
+
+            @media (min-width: 992px) {
+                display: inline-block;
+            }
+        }
+    }
+
+    .social-list {
+        margin-top: 1rem;
+        text-align: center;
+
+        @media (min-width: 992px) {
+            margin: 0;
+            text-align: right;
+        }
+
+        li {
+            &:first-of-type {
+                margin: 0 5px 0 0;
+            }
+
+            &:last-of-type {
+                margin: 0 0 0 5px;
+            }
+
+            a > i.mdi {
+                font-size: 1.25rem;
+                color: darken($text-color, 10%);
+                transition: color .2s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    color: darken($text-color, 25%);
+                }
+            }
+        }
+        
+    }
+}

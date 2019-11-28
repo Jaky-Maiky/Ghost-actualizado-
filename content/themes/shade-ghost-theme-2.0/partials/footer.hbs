@@ -1,0 +1,26 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="md-10 md-offset-1">
+                <div class="footer">
+                    <div class="row">
+                        <div class="md-8">
+                            <ul class="list-inline copy-list">
+                                <li>&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>.&nbsp;</li>
+                                <li>Theme: <a href="https://github.com/moso/shade-ghost-theme" target="_blank" rel="noopener">Shade</a> by <a href="https://moso.io" target="_blank" rel="noopener">moso</a>.&nbsp;</li>
+                                <li>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></li>
+                            </ul>
+                        </div>
+                        <div class="md-4">
+                            <ul class="list-inline social-list">
+                                {{#if @blog.facebook}}<li><a href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener"><i class="mdi mdi-facebook-box"></i></a></li>{{/if}}
+                                {{#if @blog.twitter}}<li><a href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener"><i class="mdi mdi-twitter-box"></i></a></li>{{/if}}
+                                <li><a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/" target="_blank" rel="noopener"><i class="mdi mdi-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

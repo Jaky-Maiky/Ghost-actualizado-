@@ -1,0 +1,48 @@
+// Header
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $header-bg;
+    color: $header-text-color;
+    text-align: center;
+    z-index: 0;
+
+    @media (min-width: 992px) {
+        height: calc(60vh + 68px); // 60 view height + navbar height - needs $variable
+    }
+
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+
+        @media (max-width: 576px) {
+            max-height: 100px;
+        }
+
+        @media (min-width: 992px) {
+            min-width: 370px;
+        }
+    }
+
+    .blog-title {
+        margin: 10px 0;
+        font-size: $font-size-h1;
+        letter-spacing: -1px;
+    }
+
+    .blog-description {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: $line-height;
+        letter-spacing: 0;
+    }
+}
