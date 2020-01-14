@@ -4,7 +4,7 @@ collections:
   /:
     permalink: /{slug}/
     template: index
-    filter: 'tag:-en'
+    filter: 'tag:-es'
   /en/:
     permalink: /en/{slug}/
     template: indexs

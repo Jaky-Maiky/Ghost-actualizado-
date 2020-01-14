@@ -4,11 +4,11 @@ collections:
   /:
     permalink: /{slug}/
     template: index
-    filter: 'tag:-en'
+    filter: 'tag:-es'
   /en/:
-    permalink: /en/{slug}/
+    permalink: /es/{slug}/
     template: indexs
-    filter: 'tag:en'
+    filter: 'tag:es'
 
 taxonomies:
   tag: /tag/{slug}/
